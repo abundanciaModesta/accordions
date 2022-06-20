@@ -1,0 +1,22 @@
+body {
+    background-color: aqua;
+    margin: 0;padding: 0;
+}
+
+.accord {
+    height: 200px;width: 500px;background-color: brown;
+    padding: 5px;
+    margin: 20px auto;
+
+}
+
+.accord-item {
+    background-color: #fff;
+    width: 460px;
+    height: 20px;
+    margin: 20px;
+}
+
+.accord-item:hover {
+    background-color: #ccc;
+}
