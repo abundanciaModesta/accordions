@@ -1,6 +1,4 @@
 let accords = document.querySelectorAll('.accord')
-console.log(accords)
-let count = 1
 if (accords.length>0){
     
     accords.forEach(item => {
@@ -8,8 +6,10 @@ if (accords.length>0){
         options.forEach(option => {
             option.addEventListener('click', ()=> {
                 option.classList.contains('active')?option.classList.remove('active'):option.classList.add('active')
+                if(!event.target.this){
+                    option.classList.remove('active')
+                }
             })
         })
-        return console.log(options)
 })
 }
